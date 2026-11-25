@@ -1,6 +1,12 @@
-Python 3.12.3 (tags/v3.12.3:f6650f9, Apr  9 2024, 14:05:25) [MSC v.1938 64 bit (AMD64)] on win32
-Type "help", "copyright", "credits" or "license()" for more information.
->>> class Edge:
+from vertex  import Vertex
+
+dorms = Vertex("Dorms")
+library = Vertex("Library")
+cafeteria = Vertex("Cafeteria")
+art_science = Vertex("Art and Science")
+peter_okocha = Vertex("Peter Okocha Hall")
+
+class Edge:
     def __init__(self, start, end, weight=1):
         if not isinstance(start, Vertex) or not isinstance(end, Vertex):
             raise TypeError("Edges must connect Vertex objects")
